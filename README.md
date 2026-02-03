@@ -1,5 +1,3 @@
-# python-data-science-foundation
-Learning Pandas, EDA, and Machine Learning from scratch
 # Python Data Science Journey 🚀
 
 This repo tracks my progress as I master the Python data stack.
