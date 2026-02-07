@@ -9,3 +9,7 @@ print(df.head())
 
 # 3. Checking Missing Values
 print("Missing values per column:\n", df.isnull().sum())
+
+# 4. CLEANING DATA
+# Fill missing age values with the median (a common ML practice)
+df['Age'] = df['Age'].fillna(df['Age'].median())
