@@ -16,3 +16,8 @@ df['Age'] = df['Age'].fillna(df['Age'].median())
 
 # 5: STATISTICAL SUMMARY ---
 print("\nDataset Summary Statistics:\n", df.describe())
+
+# 6. SURVIVAL ANALYSIS BY GROUP
+# Does gender play a role?
+print("\n--- Survival Rate by Sex ---")
+print(df.groupby('Sex')['Survived'].mean())
