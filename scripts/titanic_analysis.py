@@ -13,3 +13,6 @@ print("Missing values per column:\n", df.isnull().sum())
 # 4. CLEANING DATA
 # Fill missing age values with the median (a common ML practice)
 df['Age'] = df['Age'].fillna(df['Age'].median())
+
+# 5: STATISTICAL SUMMARY ---
+print("\nDataset Summary Statistics:\n", df.describe())
