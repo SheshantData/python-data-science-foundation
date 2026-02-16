@@ -21,3 +21,7 @@ print("\nDataset Summary Statistics:\n", df.describe())
 # Does gender play a role?
 print("\n--- Survival Rate by Sex ---")
 print(df.groupby('Sex')['Survived'].mean())
+
+# 7. FEATURE ENGINEERING
+# Convert 'Sex' to a numeric 'Gender' column (0 for male, 1 for female)
+df['Gender'] = df['Sex'].map({'male': 0, 'female': 1})
