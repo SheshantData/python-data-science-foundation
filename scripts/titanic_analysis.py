@@ -25,3 +25,8 @@ print(df.groupby('Sex')['Survived'].mean())
 # 7. FEATURE ENGINEERING
 # Convert 'Sex' to a numeric 'Gender' column (0 for male, 1 for female)
 df['Gender'] = df['Sex'].map({'male': 0, 'female': 1})
+
+# Create a 'FarePerPerson' column (if they traveled in groups)
+# This is a common way to see the "real" cost of a ticket
+df['FarePerPerson'] = df['Fare'] # Simplified for now
+print("\nNew columns 'Gender' and 'FarePerPerson' added.")
