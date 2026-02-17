@@ -30,3 +30,11 @@ df['Gender'] = df['Sex'].map({'male': 0, 'female': 1})
 # This is a common way to see the "real" cost of a ticket
 df['FarePerPerson'] = df['Fare'] # Simplified for now
 print("\nNew columns 'Gender' and 'FarePerPerson' added.")
+
+# 8. CORRELATION MATRIX
+# Select only numeric columns for correlation
+numeric_df = df.select_dtypes(include=['number'])
+correlation = numeric_df.corr()
+
+print("\n--- Correlation with Survival ---")
+print(correlation['Survived'].sort_values(ascending=False))
