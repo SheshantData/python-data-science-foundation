@@ -10,5 +10,5 @@ This repo tracks my progress as I master the Python data stack.
 ## 📈 Progress
 - [x] Create GitHub account
 - [x] Initialize first repo
-- [ ] Complete first Pandas tutorial
+- [x] Complete first Pandas tutorial
 - [ ] Build a survival prediction model (Titanic)
