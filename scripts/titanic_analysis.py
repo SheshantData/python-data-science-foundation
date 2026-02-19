@@ -46,3 +46,9 @@ print("\nProcessed data saved to 'data/titanic_processed.csv'!")
 # 10. FARE ANALYSIS
 print(f"Most expensive ticket: {df['Fare'].max()}")
 print(f"Cheapest ticket: {df['Fare'].min()}")
+
+# 11. EMBARKED ANALYSIS (C = Cherbourg, Q = Queenstown, S = Southampton)
+print("\n--- Survival by Port of Embarkation ---")
+# Using fillna('S') because 'S' is the most common port
+df['Embarked'] = df['Embarked'].fillna('S') 
+print(df.groupby('Embarked')['Survived'].mean())
