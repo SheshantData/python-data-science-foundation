@@ -42,3 +42,7 @@ print(correlation['Survived'].sort_values(ascending=False))
 # 9. SAVE CLEANED DATA
 df.to_csv('data/titanic_processed.csv', index=False)
 print("\nProcessed data saved to 'data/titanic_processed.csv'!")
+
+# 10. FARE ANALYSIS
+print(f"Most expensive ticket: {df['Fare'].max()}")
+print(f"Cheapest ticket: {df['Fare'].min()}")
