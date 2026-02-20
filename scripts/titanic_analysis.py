@@ -85,3 +85,14 @@ print("\nModel training complete!")
 y_pred = model.predict(X_test)
 
 print("\nPredictions complete!")
+# Accuracy
+accuracy = accuracy_score(y_test, y_pred)
+print(f"\nModel Accuracy: {accuracy:.4f}")
+
+# Confusion Matrix
+print("\nConfusion Matrix:")
+print(confusion_matrix(y_test, y_pred))
+
+# Classification Report
+print("\nClassification Report:")
+print(classification_report(y_test, y_pred))
