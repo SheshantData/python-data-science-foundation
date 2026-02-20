@@ -52,3 +52,12 @@ print("\n--- Survival by Port of Embarkation ---")
 # Using fillna('S') because 'S' is the most common port
 df['Embarked'] = df['Embarked'].fillna('S') 
 print(df.groupby('Embarked')['Survived'].mean())
+
+# 12. SELECTING FEATURES FOR ML
+# We only use numeric columns that actually help predict survival
+features = ['Pclass', 'Gender', 'Age', 'Fare']
+X = df[features]
+y = df['Survived']
+
+print("\nFeatures selected for modeling:")
+print(X.head())
