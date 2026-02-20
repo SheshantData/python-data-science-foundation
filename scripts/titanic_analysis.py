@@ -80,3 +80,8 @@ model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 
 print("\nModel training complete!")
+
+# Predict on test data
+y_pred = model.predict(X_test)
+
+print("\nPredictions complete!")
