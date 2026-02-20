@@ -69,3 +69,14 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 print(f"\nTraining set size: {len(X_train)}")
 print(f"Testing set size: {len(X_test)}")
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
+# Create the model
+model = LogisticRegression(max_iter=1000)
+
+# Train the model
+model.fit(X_train, y_train)
+
+print("\nModel training complete!")
