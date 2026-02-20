@@ -11,7 +11,7 @@ This repo tracks my progress as I master the Python data stack.
 - [x] Create GitHub account
 - [x] Initialize first repo
 - [x] Complete first Pandas tutorial
-- [ ] Build a survival prediction model (Titanic)
+- [x] Build a survival prediction model (Titanic)
 
 ## 🧠 Data Science Concepts Mastered
 - **Data Cleaning:** Using `.fillna()` to handle missing values in the Age column.
