@@ -61,3 +61,11 @@ y = df['Survived']
 
 print("\nFeatures selected for modeling:")
 print(X.head())
+
+from sklearn.model_selection import train_test_split
+
+# Split: 80% for training, 20% for testing
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+print(f"\nTraining set size: {len(X_train)}")
+print(f"Testing set size: {len(X_test)}")
