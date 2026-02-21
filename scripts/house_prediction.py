@@ -8,3 +8,10 @@ df = pd.read_csv('data/Housing.csv')
 
 print("--- House Data Loaded ---")
 print(df.head())
+
+# X = Features (The things that influence price)
+# y = Target (The actual price)
+X = df[['OverallQual', 'LotArea', 'YearBuilt', 'GarageCars']]
+y = df['SalePrice']
+
+print("\nFeatures selected for the model.")
