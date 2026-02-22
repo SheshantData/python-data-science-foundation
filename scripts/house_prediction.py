@@ -28,3 +28,17 @@ model = LinearRegression()
 model.fit(X_train, y_train)
 
 print("Model training complete.")
+
+# Make predictions on the test set
+predictions = model.predict(X_test)
+
+# Calculate error
+error = mean_absolute_error(y_test, predictions)
+
+print(f"\n--- Model Results ---")
+print(f"On average, our model is off by: ${error:,.2f}")
+
+# Manual Test: Quality 8, 10000 sqft, Built 2005, 2-car garage
+sample_house = [[8, 10000, 2005, 2]]
+predicted_price = model.predict(sample_house)
+print(f"Predicted price for sample house: ${predicted_price[0]:,.2f}")
