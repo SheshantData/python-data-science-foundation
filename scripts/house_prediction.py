@@ -35,7 +35,7 @@ predictions = model.predict(X_test)
 # Calculate error
 error = mean_absolute_error(y_test, predictions)
 
-prin(f"\n--- Model Results ---")
+print(f"\n--- Model Results ---")
 print(f"On average, our model is off by: ${error:,.2f}")
 
 # Manual Test: Quality 8, 10000 sqft, Built 2005, 2-car garage
