@@ -43,4 +43,3 @@ sample_house = [[8, 10000, 2005, 2]]
 predicted_price = model.predict(sample_house)
 print(f"Predicted price for sample house: ${predicted_price[0]:,.2f}")
 
-# 13. Initialize the Model
