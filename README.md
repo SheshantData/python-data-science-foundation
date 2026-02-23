@@ -34,3 +34,5 @@ This repo tracks my progress as I master the Python data stack.
  ### 🚀 Future Improvements
 - [ ] Add more features like "Neighborhood" and "Condition".
 - [ ] Try a Random Forest Regressor to improve accuracy.
+- [ ] Build a web interface using Streamlit.
+
