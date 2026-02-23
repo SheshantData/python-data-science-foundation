@@ -52,3 +52,9 @@ def get_safe_prediction(data):
 
 # Use it
 print(f"Validated Prediction: ${get_safe_prediction(new_house)[0]:,.2f}")
+
+import joblib
+
+# Save the model to a file
+joblib.dump(model, 'models/house_price_model.pkl')
+print("Model saved to 'models/' folder for future use!")
