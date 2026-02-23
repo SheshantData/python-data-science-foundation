@@ -43,3 +43,9 @@ sample_house = [[8, 10000, 2005, 2]]
 predicted_price = model.predict(sample_house)
 print(f"Predicted price for sample house: ${predicted_price[0]:,.2f}")
 
+# Add this above your manual prediction
+def get_safe_prediction(data):
+    if all(isinstance(i, (int, float)) for i in data[0]):
+        return model.predict(data)
+    else:
+        return "Error: All inputs must be numbers."
