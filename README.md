@@ -30,3 +30,5 @@ This repo tracks my progress as I master the Python data stack.
 - **Model:** Linear Regression (In Progress)
 - **Features Used:** Overall Quality, Lot Area, Year Built, and Garage Capacity.
 - **Current Status:** Data cleaned and split into training/testing sets.
+
+ ### 🚀 Future Improvements
