@@ -49,3 +49,6 @@ def get_safe_prediction(data):
         return model.predict(data)
     else:
         return "Error: All inputs must be numbers."
+
+# Use it
+print(f"Validated Prediction: ${get_safe_prediction(new_house)[0]:,.2f}")
