@@ -32,3 +32,4 @@ This repo tracks my progress as I master the Python data stack.
 - **Current Status:** Data cleaned and split into training/testing sets.
 
  ### 🚀 Future Improvements
+- [ ] Add more features like "Neighborhood" and "Condition".
