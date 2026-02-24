@@ -31,6 +31,11 @@ This repo tracks my progress as I master the Python data stack.
 
 ## 🧠 Data Science Concepts Mastered
 
+* **Supervised Learning:** Classification vs. Regression
+* **Data Splitting:** Training vs. Testing sets (80/20 split)
+* **Feature Selection:** Choosing numeric inputs for model accuracy
+* **Model Evaluation:** Accuracy (Classification) and MAE (Regression)
+
 ## 🏡 Project 1: Titanic Analysis
 
 - **Data Cleaning:** Using `.fillna()` to handle missing values in the Age column.
