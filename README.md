@@ -8,6 +8,12 @@
 1. **[Titanic Survival Predictor](./scripts/titanic_model.py)** - Binary Classification (~80% Accuracy)
 2. **[House Price Estimator](./scripts/house_prediction.py)** - Linear Regression (Predicting USD values)
 
+
+### 📦 Versions Used
+- Pandas: `2.x`
+- Scikit-Learn: `1.x`
+- Python: `3.10+`
+- 
 # Python Data Science Journey 🚀
 
 This repo tracks my progress as I master the Python data stack.
