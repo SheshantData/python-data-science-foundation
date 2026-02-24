@@ -1,3 +1,13 @@
+# 📊 Data Science Portfolio
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+## 📁 Projects
+1. **[Titanic Survival Predictor](./scripts/titanic_model.py)** - Binary Classification (~80% Accuracy)
+2. **[House Price Estimator](./scripts/house_prediction.py)** - Linear Regression (Predicting USD values)
+
 # Python Data Science Journey 🚀
 
 This repo tracks my progress as I master the Python data stack.
