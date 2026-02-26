@@ -17,3 +17,10 @@ print(df)
 hard_stuff = df[df['Difficulty'] >= 4]
 print("\n--- Hardest Topics ---")
 print(hard_stuff)
+
+# Adding a new column to the tracker
+df['Weeks_Estimated'] = [2, 3, 6]
+
+# Calculate total time
+total_weeks = df['Weeks_Estimated'].sum()
+print(f"\nTotal estimated time to mastery: {total_weeks} weeks")
