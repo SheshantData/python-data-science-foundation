@@ -57,3 +57,6 @@ This repo tracks my progress as I master the Python data stack.
 - [x] Try a Random Forest Regressor to improve accuracy.
 - [ ] Build a web interface using Streamlit.
 
+
+## 🛠️ Internal Tools
+- **[Roadmap Tracker](./utils/roadmap_tracker.py):** A custom Pandas script I built to track my learning progress and estimate project timelines using DataFrame filtering.
