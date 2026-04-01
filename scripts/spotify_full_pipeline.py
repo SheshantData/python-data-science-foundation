@@ -36,3 +36,6 @@ df['duration_min'] = df['duration_ms'] / 60000
 features = ['danceability', 'energy', 'loudness', 'speechiness', 
             'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo']
 X = df[features]
+
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
