@@ -5,7 +5,7 @@
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 ## 📁 Projects
-1. **[Titanic Survival Predictor](./scripts/titanic_model.py)** - Binary Classification (~80% Accuracy)
+1. **[Titanic Survival Predictor](./scripts/titanic_analysis.py)** - Binary Classification (~80% Accuracy)
 2. **[House Price Estimator](./scripts/house_prediction.py)** - Linear Regression (Predicting USD values)
 3. **[Spotify Song Clustering](./scripts/spotify_full_pipeline.py)** - Unsupervised Learning (Grouping 32k+ tracks)
 
