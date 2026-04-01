@@ -58,3 +58,7 @@ print(cluster_profiles)
 # --- SECTION 5: EXPORTING SUB-DATASETS ---
 # Saving a specific "High Energy" playlist based on the clusters
 high_energy_cluster = cluster_profiles['energy'].idxmax()
+high_energy_tracks = df[df['Cluster'] == high_energy_cluster][['track_name', 'track_artist']]
+high_energy_tracks.head(20).to_csv('data/ai_generated_workout_playlist.csv', index=False)
+
+print("\nSuccess: Full pipeline executed. 'Workout' playlist generated based on AI clusters.")
