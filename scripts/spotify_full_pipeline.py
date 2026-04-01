@@ -9,6 +9,7 @@ import os
 if not os.path.exists('visuals'): os.makedirs('visuals')
 df = pd.read_csv('data/spotify_songs.csv')
 
+
 # --- SECTION 1: ADVANCED EDA ---
 print("Performing Deep-Dive EDA...")
 
@@ -43,3 +44,9 @@ X_scaled = scaler.fit_transform(X)
 # Using 5 clusters for more granular song groups
 kmeans = KMeans(n_clusters=5, random_state=42, n_init=10)
 df['Cluster'] = kmeans.fit_predict(X_scaled)
+
+
+# --- SECTION 4: CLUSTER PROFILING (The "Analyst" Step) ---
+print("\n--- Audio Archetypes Identified ---")
+# Mapping clusters to human-readable names based on the data
+cluster_profiles = df.groupby('Cluster')[features].mean()
