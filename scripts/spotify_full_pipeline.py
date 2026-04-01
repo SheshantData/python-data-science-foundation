@@ -30,3 +30,9 @@ plt.savefig('visuals/tempo_energy_scatter.png')
 # --- SECTION 2: FEATURE ENGINEERING ---
 # Converting duration from milliseconds to minutes for better readability
 df['duration_min'] = df['duration_ms'] / 60000
+
+
+# --- SECTION 3: PROFESSIONAL CLUSTERING ---
+features = ['danceability', 'energy', 'loudness', 'speechiness', 
+            'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo']
+X = df[features]
