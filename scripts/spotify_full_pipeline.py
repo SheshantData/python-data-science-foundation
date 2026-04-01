@@ -50,3 +50,6 @@ df['Cluster'] = kmeans.fit_predict(X_scaled)
 print("\n--- Audio Archetypes Identified ---")
 # Mapping clusters to human-readable names based on the data
 cluster_profiles = df.groupby('Cluster')[features].mean()
+
+# Let's find the 'Most Acoustic' and 'Most High Energy' clusters
+print(cluster_profiles)
