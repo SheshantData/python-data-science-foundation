@@ -25,3 +25,8 @@ plt.figure(figsize=(10, 6))
 sns.scatterplot(data=df.sample(2000), x='tempo', y='energy', hue='playlist_genre', alpha=0.5)
 plt.title('Tempo vs Energy (Sample of 2000 songs)')
 plt.savefig('visuals/tempo_energy_scatter.png')
+
+
+# --- SECTION 2: FEATURE ENGINEERING ---
+# Converting duration from milliseconds to minutes for better readability
+df['duration_min'] = df['duration_ms'] / 60000
