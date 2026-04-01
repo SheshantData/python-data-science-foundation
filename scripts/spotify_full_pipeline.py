@@ -53,3 +53,8 @@ cluster_profiles = df.groupby('Cluster')[features].mean()
 
 # Let's find the 'Most Acoustic' and 'Most High Energy' clusters
 print(cluster_profiles)
+
+
+# --- SECTION 5: EXPORTING SUB-DATASETS ---
+# Saving a specific "High Energy" playlist based on the clusters
+high_energy_cluster = cluster_profiles['energy'].idxmax()
