@@ -39,3 +39,7 @@ X = df[features]
 
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
+
+# Using 5 clusters for more granular song groups
+kmeans = KMeans(n_clusters=5, random_state=42, n_init=10)
+df['Cluster'] = kmeans.fit_predict(X_scaled)
