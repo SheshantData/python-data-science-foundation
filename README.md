@@ -7,56 +7,64 @@
 ## 📁 Projects
 1. **[Titanic Survival Predictor](./scripts/titanic_model.py)** - Binary Classification (~80% Accuracy)
 2. **[House Price Estimator](./scripts/house_prediction.py)** - Linear Regression (Predicting USD values)
-
+3. **[Spotify Song Clustering](./scripts/spotify_full_pipeline.py)** - Unsupervised Learning (Grouping 32k+ tracks)
 
 ### 📦 Versions Used
 - Pandas: `2.x`
 - Scikit-Learn: `1.x`
 - Python: `3.10+`
-- 
+
 # Python Data Science Journey 🚀
 
 This repo tracks my progress as I master the Python data stack.
 
 ## 🛠 Tools I'm Learning
-- **Pandas:** Data manipulation
-- **Matplotlib/Seaborn:** Visualization (EDA)
-- **Scikit-Learn:** Machine Learning
+- **Pandas:** Data manipulation & cleaning
+- **Matplotlib/Seaborn:** Advanced EDA & Statistical Visualization
+- **Scikit-Learn:** Supervised & Unsupervised Machine Learning
 
 ## 📈 Progress
 - [x] Create GitHub account
-- [x] Initialize first repo
-- [x] Complete first Pandas tutorial
-- [x] Build a survival prediction model (Titanic)
+- [x] Build survival prediction model (Titanic)
+- [x] Complete House Price Estimator (Regression)
+- [x] Implement Spotify Audio Analysis (Clustering)
+- [ ] Deploy a model using a Streamlit Web App
 
 ## 🧠 Data Science Concepts Mastered
+* **Supervised Learning:** Classification (Logistic Regression) vs. Regression (Linear Regression)
+* **Unsupervised Learning:** Pattern recognition and grouping using K-Means Clustering
+* **Data Preprocessing:** Handling missing values, feature scaling (`StandardScaler`), and encoding categorical variables
+* **Model Evaluation:** Accuracy scores, Mean Absolute Error (MAE), and the "Elbow Method" for clusters
 
-* **Supervised Learning:** Classification vs. Regression
-* **Data Splitting:** Training vs. Testing sets (80/20 split)
-* **Feature Selection:** Choosing numeric inputs for model accuracy
-* **Model Evaluation:** Accuracy (Classification) and MAE (Regression)
+---
 
 ## 🏡 Project 1: Titanic Analysis
-
 - **Data Cleaning:** Using `.fillna()` to handle missing values in the Age column.
 - **Aggregation:** Using `.groupby()` to compare survival rates across demographics.
-- **Correlation:** Analyzing how features like `Fare` and `Pclass` relate to survival outcomes.
-- **Feature Engineering:** Transforming categorical text (Sex) into numeric values (Gender).
+- **Feature Engineering:** Transforming categorical text (Sex) into numeric values.
 
-- ---
+---
 
 ## 🏡 Project 2: House Price Predictor
 **Goal:** Predict the sale price of a house based on its features.
-- **Type:** Linear Regression
-- **Model:** Linear Regression (In Progress)
+- **Status:** Completed ✅
 - **Features Used:** Overall Quality, Lot Area, Year Built, and Garage Capacity.
-- **Current Status:** Data cleaned and split into training/testing sets.
+- **Key Skill:** Implemented model persistence (saving/loading models with `joblib`).
 
- ### 🚀 Future Improvements
-- [ ] Add more features like "Neighborhood" and "Condition".
-- [x] Try a Random Forest Regressor to improve accuracy.
-- [ ] Build a web interface using Streamlit.
+---
 
+## 🎵 Project 3: Spotify Song Clustering
+**Goal:** Discover hidden "Audio Archetypes" in 32,000+ tracks to build automated playlists.
+- **Process:** - Conducted deep-dive EDA with **Correlation Heatmaps** and **Boxplots**.
+    - Scaled audio features (Tempo, Energy, Danceability) for fair mathematical weight.
+    - Used **K-Means Clustering** to identify 5 distinct musical segments.
+- **Insight:** Successfully isolated a "High-Energy" cluster (BPM > 125, Energy > 0.8) to generate an automated **Workout Playlist**.
+
+---
 
 ## 🛠️ Internal Tools
-- **[Roadmap Tracker](./utils/roadmap_tracker.py):** A custom Pandas script I built to track my learning progress and estimate project timelines using DataFrame filtering.
+- **[Roadmap Tracker](./utils/roadmap_tracker.py):** A custom Pandas script I built to track my learning progress using DataFrame filtering.
+
+## 📊 Data Sources
+- **Titanic & House Prices:** [Kaggle Datasets](https://www.kaggle.com/)
+- **Spotify Tracks:** [30,000 Spotify Songs Dataset](https://www.kaggle.com/datasets/joebeachcapital/30000-spotify-songs)
