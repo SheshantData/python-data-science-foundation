@@ -29,3 +29,11 @@ print("Crunching the visuals...")
 plt.figure(figsize=(10, 8))
 sns.pairplot(df.drop('species', axis=1), hue='species_name', palette='husl')
 plt.savefig('visuals/iris_pairplot.png')
+
+# The "Deep Dive" - Violin Plots
+# Good for seeing the density and spread of each measurement
+fig, axes = plt.subplots(2, 2, figsize=(14, 10))
+for i, col in enumerate(iris.feature_names):
+    sns.violinplot(ax=axes[i//2, i%2], x='species_name', y=col, data=df, palette='muted')
+plt.tight_layout()
+plt.savefig('visuals/iris_violin_plots.png')
