@@ -20,3 +20,12 @@ df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
 df['species'] = iris.target
 target_names = {0: 'Setosa', 1: 'Versicolor', 2: 'Virginica'}
 df['species_name'] = df['species'].map(target_names)
+
+# --- 2. THE EDA (Exploratory Data Analysis) ---
+print("Crunching the visuals...")
+
+# The "Overview" - Pairplot
+# This is the classic way to see how features overlap
+plt.figure(figsize=(10, 8))
+sns.pairplot(df.drop('species', axis=1), hue='species_name', palette='husl')
+plt.savefig('visuals/iris_pairplot.png')
